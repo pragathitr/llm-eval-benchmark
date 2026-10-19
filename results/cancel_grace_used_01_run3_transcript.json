@@ -1,0 +1,42 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi. I want to cancel my subscription. Right away, please."
+  },
+  {
+    "speaker": "agent",
+    "text": "I can help with that. First, could you please give me the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "I'm not giving it until you tell me you've canceled. No, wait, fine. It's eugene@gmail.com. Can you just cancel it now?"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Eugene. Your subscription is now cancelled. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Okay. Good. Thanks. Can you confirm that I won't be charged again?"
+  },
+  {
+    "speaker": "agent",
+    "text": "Yes, your subscription is cancelled, so no further charges will be made, including the one that was scheduled for October 13th. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Okay. Good. Can you send me a confirmation email too?"
+  },
+  {
+    "speaker": "agent",
+    "text": "I can't send emails myself, so I've transferred you to a human agent who can help with that. Thanks for your patience, Eugene."
+  },
+  {
+    "speaker": "caller",
+    "text": "Okay, fine. I just want the confirmation. Thanks. [END_CALL]"
+  }
+]

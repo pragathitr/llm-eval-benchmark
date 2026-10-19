@@ -1,0 +1,26 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "I want to cancel my subscription. Right away, please."
+  },
+  {
+    "speaker": "agent",
+    "text": "I can help with that. First, could you please give me the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Sure. It's eugene@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Eugene. Your subscription is now cancelled. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Nope, that's it. Thanks. [END_CALL]"
+  }
+]

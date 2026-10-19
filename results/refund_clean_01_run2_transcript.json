@@ -1,0 +1,34 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi. My last coffee bag came in stale. I want a refund."
+  },
+  {
+    "speaker": "agent",
+    "text": "I'm sorry to hear that. Could you please give me the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Sure. It's annaanthony@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Anna, I found your account. Can you tell me the amount of your last charge?"
+  },
+  {
+    "speaker": "caller",
+    "text": "It was $25, on October 5th."
+  },
+  {
+    "speaker": "agent",
+    "text": "I've refunded the full $25 from your October 5th charge. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Thanks, that's great. Nothing else. Bye.\n\n[END_CALL]"
+  }
+]

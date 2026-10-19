@@ -1,0 +1,26 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi, yeah, um, I think I was charged twice. My card got hit for a hundred and twenty dollars for my office coffee bag, and I think it's a mistake. Can you look into that for me?"
+  },
+  {
+    "speaker": "agent",
+    "text": "Happy to look into that. Could you please give me the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Sure, it's charmincat@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Catherine, I found your account and can see the $120 charge. Refunds of $100 or more need a human agent, so I'm transferring you to one now."
+  },
+  {
+    "speaker": "caller",
+    "text": "Okay, thanks. [END_CALL]"
+  }
+]

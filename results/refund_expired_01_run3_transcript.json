@@ -1,0 +1,42 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi, yeah, I'm calling because I want a refund for my last coffee bag. I didn't like the flavor at all."
+  },
+  {
+    "speaker": "agent",
+    "text": "I'm sorry to hear that. Could you please give me the email address on your account so I can verify it?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Sure, it's bernardb@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Bernard, I found your account. Could you tell me the date and amount of your last charge?"
+  },
+  {
+    "speaker": "caller",
+    "text": "It was a $25 charge on September 20th."
+  },
+  {
+    "speaker": "agent",
+    "text": "I'm sorry, Bernard, but I can't refund that charge. Refunds only cover charges from the last 14 days, and September 20th was 20 days ago. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Come on, it's only a few weeks. I didn't even like the coffee. Can't you make an exception?"
+  },
+  {
+    "speaker": "agent",
+    "text": "I understand, and I'm sorry, but I can't make an exception to the 14-day limit. Is there anything else I can help you with, like changing your plan or pausing deliveries?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Okay, I get it. Thanks for checking anyway. I'll just skip the next bag.\n\n[END_CALL]"
+  }
+]

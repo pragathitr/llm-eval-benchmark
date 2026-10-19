@@ -1,0 +1,50 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi, um, it's about my coffee thing."
+  },
+  {
+    "speaker": "agent",
+    "text": "Happy to help with your BeanBox subscription. What would you like to do today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "I, um, want to cancel. I've been traveling a lot lately, so I'm not really home to use the coffee."
+  },
+  {
+    "speaker": "agent",
+    "text": "I can help with that. Could you please give me the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "d.denver@gmail.com"
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Don, I found your account for d.denver@gmail.com. Since you're traveling, would you like to pause your subscription for up to 4 weeks instead of cancelling?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Um, yeah, a pause sounds good. Can you start it on October 12, 2026? I'd like it to last 2 weeks."
+  },
+  {
+    "speaker": "agent",
+    "text": "Just to confirm: pause starting 2026-10-12 for 2 weeks, so it ends 2026-10-26 and you won't be charged until then. Is that right?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Um, yes, that's right. Thanks."
+  },
+  {
+    "speaker": "agent",
+    "text": "Your subscription is paused from 2026-10-12 until 2026-10-26, and your next charge will be on 2026-10-26. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "No, um, that's all I needed. Thanks for your help.\n\n[END_CALL]"
+  }
+]

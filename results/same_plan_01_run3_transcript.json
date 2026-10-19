@@ -1,0 +1,26 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi, um, yeah. I want to switch to the one where it comes every week."
+  },
+  {
+    "speaker": "agent",
+    "text": "Happy to help with that. What's the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "My email is faith123@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Faith. I read that as faith123@gmail.com, and I see you're already on the weekly plan. Did you want something else changed, like bi-weekly or monthly?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Oh, okay. Never mind, thanks. [END_CALL]"
+  }
+]

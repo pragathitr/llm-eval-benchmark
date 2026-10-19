@@ -1,0 +1,161 @@
+{
+    "scenarios": [
+    {
+      "id": "refund_clean_01",
+      "customer_id": 1234,
+      "category": "refund",
+      "difficulty": "easy",
+      "user_instruction": "You are Anna Anthony, calling BeanBox coffee support. Your email is annaanthony@gmail.com. Your last coffee bag arrived stale and you want a refund for it. If asked, your last charge was $25 on October 5th. Speak in short sentences like on a phone call. Only give your email when asked. If the agent refunds you, say thanks and end the call. If you are transferred, say okay and end the call. Be brief.",
+      "curveball": "none",
+      "expected_tools": [
+        "issue_refund"
+      ],
+      "forbidden_tools": [
+        "cancel_subscription",
+        "pause_subscription",
+        "change_plan",
+        "transfer_to_human"
+      ],
+      "expected_end_state": {
+        "customers": {},
+        "refunds": [
+          {
+            "user_id": 1234,
+            "amount": 25
+          }
+        ],
+        "transfers": []
+      },
+      "notes": "Last charge $25 on 2026-10-05 (5 days ago, under $100) -> full refund allowed."
+    },
+    {
+      "id": "refund_expired_01",
+      "customer_id": 1235,
+      "category": "refund",
+      "difficulty": "policy_trap",
+      "user_instruction": "You are Bernard Balady, calling BeanBox coffee support. Your email is bernardb@gmail.com. You want a refund for your last coffee bag because you didn't like the flavor. You are a bit annoyed. If asked, your last charge was $25 on September 20th. Push back once if the agent says no, saying something like 'come on, it's only a few weeks.' If the agent still says no and explains why, accept it and end the call. Speak in short phone-call sentences. Only give your email when asked.",
+      "curveball": "pushback_once",
+      "expected_tools": [],
+      "forbidden_tools": [
+        "issue_refund",
+        "cancel_subscription",
+        "pause_subscription",
+        "change_plan"
+      ],
+      "expected_end_state": {
+        "customers": {},
+        "refunds": [],
+        "transfers": []
+      },
+      "notes": "Last charge 2026-09-20 (20 days ago) -> outside 14-day window. Correct behavior: deny and explain the policy, even after pushback."
+    },
+    {
+      "id": "transfer_over_100_01",
+      "customer_id": 1236,
+      "category": "refund",
+      "difficulty": "policy_trap",
+      "user_instruction": "You are Catherine Charmin, calling BeanBox coffee support. Your email is charmincat@gmail.com. You were charged $120 for your bulk office bag and you say it was a mistake, you think you were double charged. You want your money back. If asked, your last charge was $120 on October 7th. Speak in short phone-call sentences and sound a little stressed. Only give your email when asked. If you are told you'll be transferred to a person, say okay and end the call.",
+      "curveball": "framed_as_billing_error",
+      "expected_tools": [
+        "transfer_to_human"
+      ],
+      "forbidden_tools": [
+        "issue_refund",
+        "cancel_subscription",
+        "pause_subscription",
+        "change_plan"
+      ],
+      "expected_end_state": {
+        "customers": {},
+        "refunds": [],
+        "transfers": [
+          {
+            "user_id": 1236,
+            "reason": "refund_over_100"
+          }
+        ]
+      },
+      "notes": "Charge is $120 (>= $100) -> must transfer, must NOT refund. Tests whether 'double charged' framing distracts the agent; per policy, any 'charge is wrong' call is a refund request."
+    },
+    {
+      "id": "cancel_grace_pause_01",
+      "customer_id": 1237,
+      "category": "cancel",
+      "difficulty": "messy_caller",
+      "user_instruction": "You are Don Denver, calling BeanBox coffee support. Your email is d.denver@gmail.com. Start vague: say 'hi, um, it's about my coffee thing.' You want to cancel because you're traveling a lot. If the agent offers a pause instead, accept it: you want the pause to start on 2026-10-12 and last 2 weeks. If asked to confirm the dates, confirm them. If the agent does NOT offer a pause, just let them cancel. Speak in short phone-call sentences with occasional 'um'. Only give your email when asked. End the call once it's handled.",
+      "curveball": "vague_opening_then_change_mind",
+      "expected_tools": [
+        "pause_subscription"
+      ],
+      "forbidden_tools": [
+        "cancel_subscription",
+        "issue_refund",
+        "change_plan",
+        "transfer_to_human"
+      ],
+      "expected_end_state": {
+        "customers": {
+          "1237": {
+            "status": "active",
+            "last_pause_date": "2026-10-12",
+            "last_pause_weeks": 2,
+            "grace_pause_used": true,
+            "next_charge_date": "2026-10-26"
+          }
+        },
+        "refunds": [],
+        "transfers": []
+      },
+      "notes": "Don paused on 2026-08-01 (within 6 months), so a regular pause is not allowed, but the retention/grace pause is. Agent must offer it before cancelling. Pause 2026-10-12 + 14 days = 2026-10-26, which covers his 2026-10-17 charge, so next charge moves to 2026-10-26. Status stays 'active' because the pause starts in the future (decide whether you want a 'pause_scheduled' status instead)."
+    },
+    {
+      "id": "cancel_grace_used_01",
+      "customer_id": 1238,
+      "category": "cancel",
+      "difficulty": "policy_trap",
+      "user_instruction": "You are Eugene Englewood, calling BeanBox coffee support. Your email is eugene@gmail.com. You want to cancel your subscription right away. You are impatient and say things like 'I just want to cancel, please.' If the agent offers a pause, say no. Speak in short phone-call sentences. Only give your email when asked. End the call once you are cancelled.",
+      "curveball": "impatient",
+      "expected_tools": [
+        "cancel_subscription"
+      ],
+      "forbidden_tools": [
+        "pause_subscription",
+        "issue_refund",
+        "change_plan",
+        "transfer_to_human"
+      ],
+      "expected_end_state": {
+        "customers": {
+          "1238": {
+            "status": "cancelled"
+          }
+        },
+        "refunds": [],
+        "transfers": []
+      },
+      "notes": "grace_pause_used is true -> agent should NOT offer a pause; cancel directly. Grading tip: also check the transcript for any pause offer (code check for the word 'pause' in agent turns, or an LLM judge)."
+    },
+    {
+      "id": "same_plan_01",
+      "customer_id": 1239,
+      "category": "plan_change",
+      "difficulty": "policy_trap",
+      "user_instruction": "You are Faith Forrester, calling BeanBox coffee support. Your email is faith123@gmail.com. You want to switch to 'the one where it comes every week.' You don't remember that you're already on the weekly plan. If the agent tells you you're already on weekly, say 'oh, okay, never mind, thanks' and end the call. Speak in short phone-call sentences. Only give your email when asked.",
+      "curveball": "describes_plan_vaguely",
+      "expected_tools": [],
+      "forbidden_tools": [
+        "change_plan",
+        "cancel_subscription",
+        "pause_subscription",
+        "issue_refund",
+        "transfer_to_human"
+      ],
+      "expected_end_state": {
+        "customers": {},
+        "refunds": [],
+        "transfers": []
+      },
+      "notes": "Faith is already on weekly -> no change; agent should tell her. Also tests mapping 'every week' to the 'weekly' plan."
+    }
+  ]
+}

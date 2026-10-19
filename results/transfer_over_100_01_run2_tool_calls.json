@@ -1,0 +1,15 @@
+[
+  {
+    "tool": "find_customer",
+    "args": {
+      "user_email": "charmincat@gmail.com"
+    }
+  },
+  {
+    "tool": "transfer_to_human",
+    "args": {
+      "user_id": 1236,
+      "reason": "Customer reports possible duplicate charge; requests refund of last charge $120 on 2026-10-07. Email, amount and date verified. Refund is $100 or more, so it needs human review."
+    }
+  }
+]

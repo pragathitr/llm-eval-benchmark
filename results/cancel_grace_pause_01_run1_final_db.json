@@ -1,0 +1,84 @@
+{
+  "customers": [
+    {
+      "user_id": 1234,
+      "user_name": "Anna Anthony",
+      "user_email": "annaanthony@gmail.com",
+      "plan": "monthly",
+      "status": "active",
+      "next_charge_date": "2026-11-05",
+      "last_charge_date": "2026-10-05",
+      "last_charge_amount": 25,
+      "last_pause_date": null,
+      "last_pause_weeks": null,
+      "grace_pause_used": false
+    },
+    {
+      "user_id": 1235,
+      "user_name": "Bernard Balady",
+      "user_email": "bernardb@gmail.com",
+      "plan": "monthly",
+      "status": "active",
+      "next_charge_date": "2026-10-20",
+      "last_charge_date": "2026-09-20",
+      "last_charge_amount": 25,
+      "last_pause_date": null,
+      "last_pause_weeks": null,
+      "grace_pause_used": false
+    },
+    {
+      "user_id": 1236,
+      "user_name": "Catherine Charmin",
+      "user_email": "charmincat@gmail.com",
+      "plan": "bi-weekly",
+      "status": "active",
+      "next_charge_date": "2026-10-21",
+      "last_charge_date": "2026-10-07",
+      "last_charge_amount": 120,
+      "last_pause_date": null,
+      "last_pause_weeks": null,
+      "grace_pause_used": false
+    },
+    {
+      "user_id": 1237,
+      "user_name": "Don Denver",
+      "user_email": "d.denver@gmail.com",
+      "plan": "bi-weekly",
+      "status": "active",
+      "next_charge_date": "2026-10-26",
+      "last_charge_date": "2026-10-03",
+      "last_charge_amount": 25,
+      "last_pause_date": "2026-10-12",
+      "last_pause_weeks": 2,
+      "grace_pause_used": true
+    },
+    {
+      "user_id": 1238,
+      "user_name": "Eugene Englewood",
+      "user_email": "eugene@gmail.com",
+      "plan": "weekly",
+      "status": "active",
+      "next_charge_date": "2026-10-13",
+      "last_charge_date": "2026-10-06",
+      "last_charge_amount": 25,
+      "last_pause_date": "2026-08-01",
+      "last_pause_weeks": 3,
+      "grace_pause_used": true
+    },
+    {
+      "user_id": 1239,
+      "user_name": "Faith Forrester",
+      "user_email": "faith123@gmail.com",
+      "plan": "weekly",
+      "status": "active",
+      "next_charge_date": "2026-10-15",
+      "last_charge_date": "2026-10-08",
+      "last_charge_amount": 25,
+      "last_pause_date": null,
+      "last_pause_weeks": null,
+      "grace_pause_used": false
+    }
+  ],
+  "refunds": [],
+  "transfers": []
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi, yeah, um, I think I was charged twice for my bulk office bag. I saw a $120 charge on my card and I'm pretty sure it's a mistake. Can you look into that for me?"
+  },
+  {
+    "speaker": "agent",
+    "text": "I can help look into that. Could you please give me the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Sure, it's charmincat@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, I found your account. Can you confirm the date of that $120 charge?"
+  },
+  {
+    "speaker": "caller",
+    "text": "It was October 7th. That's the last charge I see on my card. Can you see if there's a second one? I really need that money back."
+  },
+  {
+    "speaker": "agent",
+    "text": "I can confirm the $120 charge on October 7th, and I only see that one on my end. Refunds of $100 or more need a human agent, so I've transferred you to one who can look into a possible duplicate charge."
+  },
+  {
+    "speaker": "caller",
+    "text": "Okay, thanks. [END_CALL]"
+  }
+]

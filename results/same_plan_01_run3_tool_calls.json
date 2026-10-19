@@ -1,0 +1,8 @@
+[
+  {
+    "tool": "find_customer",
+    "args": {
+      "user_email": "faith123@gmail.com"
+    }
+  }
+]

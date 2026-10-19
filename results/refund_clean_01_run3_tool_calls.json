@@ -1,0 +1,15 @@
+[
+  {
+    "tool": "find_customer",
+    "args": {
+      "user_email": "annaanthony@gmail.com"
+    }
+  },
+  {
+    "tool": "issue_refund",
+    "args": {
+      "user_id": 1234,
+      "amount": 25
+    }
+  }
+]

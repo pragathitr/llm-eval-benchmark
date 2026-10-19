@@ -1,0 +1,15 @@
+[
+  {
+    "tool": "find_customer",
+    "args": {
+      "user_email": "charmincat@gmail.com"
+    }
+  },
+  {
+    "tool": "transfer_to_human",
+    "args": {
+      "user_id": 1236,
+      "reason": "Customer reports possible double charge of $120 and wants a refund. Last charge is $120 on 2026-10-07. Refunds of $100 or more must be handled by a human."
+    }
+  }
+]

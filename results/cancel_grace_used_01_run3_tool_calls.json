@@ -1,0 +1,21 @@
+[
+  {
+    "tool": "find_customer",
+    "args": {
+      "user_email": "eugene@gmail.com"
+    }
+  },
+  {
+    "tool": "cancel_subscription",
+    "args": {
+      "user_id": 1238
+    }
+  },
+  {
+    "tool": "transfer_to_human",
+    "args": {
+      "user_id": 1238,
+      "reason": "Customer's subscription was cancelled and they are requesting a confirmation email, which is outside my capabilities."
+    }
+  }
+]

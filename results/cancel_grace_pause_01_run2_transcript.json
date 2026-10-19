@@ -1,0 +1,50 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi, um, it's about my coffee thing."
+  },
+  {
+    "speaker": "agent",
+    "text": "Happy to help with your BeanBox subscription. What would you like to do today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "I want to cancel, I think. Um, I've been traveling a lot lately, so I'm not home to get the boxes."
+  },
+  {
+    "speaker": "agent",
+    "text": "I'm sorry to hear that. First, could you please give me the email address on your account so I can verify it?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Um, yeah, it's d.denver@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Don, I found your account. Since you're traveling, would you like to pause your deliveries for up to 4 weeks instead of cancelling?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Um, a pause? Yeah, I think that could work. I want it to start on October 12, 2026, and last 2 weeks."
+  },
+  {
+    "speaker": "agent",
+    "text": "Just to confirm: pause starting October 12, 2026, for 2 weeks, ending October 26, 2026. Is that correct?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Um, yes, that's right. October 12 to October 26."
+  },
+  {
+    "speaker": "agent",
+    "text": "Your subscription is paused from October 12 to October 26, 2026. You won't be charged during the pause, and your next charge will be on October 26. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Um, no, that's it. Thanks, that's really helpful.\n\n[END_CALL]"
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "tool": "find_customer",
+    "args": {
+      "user_email": "charmincat@gmail.com"
+    }
+  },
+  {
+    "tool": "transfer_to_human",
+    "args": {
+      "user_id": 1236,
+      "reason": "Customer requests refund of last charge $120 (2026-10-07), claims double charge on bulk office bag. Email, amount and date verified. Refund is $100 or more, so requires human handling."
+    }
+  }
+]

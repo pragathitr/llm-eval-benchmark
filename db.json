@@ -78,5 +78,7 @@
             "last_pause_weeks": null, 
             "grace_pause_used": false
         }
-    ]
+    ],
+    "refunds": [],
+    "transfers": []
 }

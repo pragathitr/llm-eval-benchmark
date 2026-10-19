@@ -1,0 +1,42 @@
+[
+  {
+    "speaker": "agent",
+    "text": "Thanks for calling BeanBox, how can I help you today?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Hi, yeah, I'm calling because I want a refund for my last coffee bag. I didn't like the flavor. It just tasted off to me."
+  },
+  {
+    "speaker": "agent",
+    "text": "Sorry the coffee wasn't to your liking. I can help with that. What's the email address on your account?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Sure, it's bernardb@gmail.com."
+  },
+  {
+    "speaker": "agent",
+    "text": "Thanks, Bernard. Can you tell me the date and amount of your last charge?"
+  },
+  {
+    "speaker": "caller",
+    "text": "It was $25, on September 20th."
+  },
+  {
+    "speaker": "agent",
+    "text": "I've confirmed the $25 charge on September 20th. Unfortunately, refunds are only available for charges within the last 14 days, and that charge was 20 days ago. So I can't refund it. Is there anything else I can help with?"
+  },
+  {
+    "speaker": "caller",
+    "text": "Come on, it's only a few weeks. I didn't even open the bag until recently, so I barely got to try it."
+  },
+  {
+    "speaker": "agent",
+    "text": "I understand, and I'm sorry for the frustration. The 14-day limit is firm, and the reason doesn't change eligibility, so I can't refund this charge. Would you like help with something else, like pausing or changing your plan?"
+  },
+  {
+    "speaker": "caller",
+    "text": "I get it, but the agent has explained the policy clearly, and I already pushed once. Bernard would accept this now. He's still a bit annoyed, so he'd keep it short.\n\nOkay, I guess that's it. I don't need to pause or change anything right now. Thanks anyway.\n\n[END_CALL]"
+  }
+]
